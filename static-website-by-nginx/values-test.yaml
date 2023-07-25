@@ -1,0 +1,11 @@
+resources:
+  requests:
+    memory: 1Gi
+    cpu: 512m
+  limits:
+    memory: 2Gi
+    cpu: 1
+
+environments:
+  - name: APP_ENV
+    value: "dev"
