@@ -1,4 +1,0 @@
-image:
-  repository: josabor/static-website-by-nginx
-  tag: "sha-39b04a2"
-  pullPolicy: IfNotPresent

@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: static-website-by-nginx
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: gitops-argocd-helm
+    server: {{ .Values.spec.destination.server }}
+  project: default
+  source:
+    path: static-website-by-nginx
+    repoURL: {{ .Values.spec.source.repo }}
+    targetRevision: {{ .Values.spec.source.targetRevision }}

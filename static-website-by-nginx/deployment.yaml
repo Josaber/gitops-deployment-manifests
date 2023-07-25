@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: static-website-by-nginx
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: static-website-by-nginx
+  template:
+    metadata:
+      labels:
+        app: static-website-by-nginx
+    spec:
+      containers:
+      - image: josabor/static-website-by-nginx:main
+        name: static-website-by-nginx
+        ports:
+        - containerPort: 80
