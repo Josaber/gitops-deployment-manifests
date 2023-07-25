@@ -1,6 +1,6 @@
 spec:
   destination:
-    server: https://kubernetes.default.svc
+    server: https://kubernetes.gitops-argocd-helm.svc
   source:
     repo: https://github.com/Josaber/gitops-deployment-manifests
     targetRevision: HEAD
