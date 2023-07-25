@@ -36,19 +36,3 @@ spec:
             - name: http
               containerPort: {{ .Values.container.port }}
               protocol: TCP
-          livenessProbe:
-            initialDelaySeconds: 10
-            httpGet:
-              httpHeaders:
-                - name: Host
-                  value: {{ index .Values.hosts 0 }}
-              path: /actuator/health
-              port: {{ .Values.container.port }}
-          readinessProbe:
-            initialDelaySeconds: 10
-            httpGet:
-              httpHeaders:
-                - name: Host
-                  value: {{ index .Values.hosts 0 }}
-              path: /actuator/health
-              port: {{ .Values.container.port }}
