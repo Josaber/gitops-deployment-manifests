@@ -18,12 +18,20 @@ $ argocd app delete static-website-by-nginx
 
 ## TODO
 
-- argocd as code: account, permission, application, ...
-- cluster: aws eks
-- ingress: aws alb
-- serviceaccount: aws role
-- probe
-- hpa
-- dns
-- https
-- ...
+- argocd as code
+  - account
+  - permission
+  - application
+  - ...
+- AWS integration
+  - cluster: aws eks
+  - ingress: aws alb
+  - serviceaccount: aws role
+- Kubernetes
+  - probe
+  - hpa
+  - dns
+  - namespace
+- Other
+  - https
+  - ...
