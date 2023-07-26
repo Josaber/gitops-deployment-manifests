@@ -1,4 +1,4 @@
-# gitops-deployment-manifests
+# GitOps Deployment Manifests
 
 ```shell
 $ argocd app create static-website-by-nginx \
