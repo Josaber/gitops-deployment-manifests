@@ -15,3 +15,14 @@ $ kubectl port-forward svc/static-website-by-nginx 9090:80
 $ argocd app sync static-website-by-nginx
 $ argocd app delete static-website-by-nginx
 ```
+
+## TODO
+
+- cluster: aws eks
+- ingress: aws alb
+- serviceaccount: aws role
+- probe
+- hpa
+- dns
+- https
+- ...
