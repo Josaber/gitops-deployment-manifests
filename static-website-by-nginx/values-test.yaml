@@ -8,4 +8,4 @@ resources:
 
 environments:
   - name: APP_ENV
-    value: "dev"
+    value: "test"
